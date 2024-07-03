@@ -97,7 +97,7 @@ app.delete("/todos/:id", async(req,res) => {
 })
 
 //Start server
-const port=8000;
+const port= process.env.PORT || 8000;
 app.listen(port,() => {
     console.log("server is listening to port " + port);
 })
